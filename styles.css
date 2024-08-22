@@ -1,5 +1,6 @@
 * {
     outline: 1px solid red;
+    font-family: Tahoma, sans-serif;
 }
 
 body {
@@ -71,10 +72,29 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     flex: 1 1 auto;
+    gap: 8px;
 }
 
 .first-text {
     font-size: 48px;
+}
+
+.second-text {
+    display: flex;
+}
+
+.contato {
+    background-color: #3882f6;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.subtitle-text {
+    font-size: 18px;
 }
 
 .main-banner {
@@ -92,17 +112,19 @@ a {
 .some-information {
     display: flex;
     flex-flow: column nowrap;
+    padding: 64px;
 }
 
 .conheça {
     display: flex;
     justify-content: center;
+    /*font-family: 'Brush Script MT';*/
 }
 
 .catalogo {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 16px;
 }
 
 .produto {
@@ -114,20 +136,23 @@ a {
 .produto img {
     height: 200px;
     width: 200px;
-    border-radius: 10%;
+    border-radius: 25px;
+    outline: solid 3px #3882f6;
+    margin-bottom: 12px;
 }
 
 /* quote */
 
 .quote {
     background-color: #e5e7eb;
-    padding: 32px;
+    padding: 128px 256px;
 }
 
 .quote a {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
+    color: #1f2937;
 }
 
 .modal {
@@ -135,12 +160,25 @@ a {
 }
 
 .modal .main {
-    background-color: aquamarine;
-    border-radius: 5%;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 32px 64px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex: 2
+}
+
+.mleft {
+    display: flex;
+    flex: 2 1 auto;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 32px;
 }
