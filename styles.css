@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     font-family: Tahoma, sans-serif;
 }
 
@@ -11,21 +11,23 @@ body {
 
 
 .header {
-    background-color: #1f2937;
+    background-image: linear-gradient(to top,  #000080, #030346);
     color: rgb(255, 255, 255);
 }
 
 .logo {
     display: flex;
-    max-height: 54px;
+    max-height: 48px;
     width: auto;
+    border-radius: 50%;
 }
 
 .header-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 64px;
+    padding: 0px 5%;
 }
 
 .hleft {
@@ -34,10 +36,24 @@ body {
     gap: 12px;
 }
 
-.name,
-.item {
+.name {
     font-size: 24px;
     color: #f9faf8;
+}
+
+.item {
+    font-size: 18px;
+    color: #e5e7eb;
+    cursor: pointer;
+}
+
+.texto-produto {
+    margin: 2px 12px;
+    font-size: 15px;
+    text-align: center;
+    color: #002ead;
+    font-style: italic;
+    font-family: cursive;
 }
 
 ul {
@@ -83,14 +99,21 @@ a {
     display: flex;
 }
 
-.contato {
+.main-top .contato {
     background-color: #3882f6;
     color: white;
-    padding: 8px;
+    padding: 12px 32px;
+    border: solid white 1.5px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.main-top .contato:hover{
+    background-color: #5D3FD3;
+    transition: 0.7s;
 }
 
 .subtitle-text {
@@ -105,6 +128,7 @@ a {
     width: 1024px;
     object-fit: cover;
     padding: 16px;
+    border-radius: 30px;
 }
 
 /* content */
@@ -137,15 +161,17 @@ a {
     height: 200px;
     width: 200px;
     border-radius: 25px;
-    outline: solid 3px #3882f6;
+    outline: dotted 3px #3882f6;
     margin-bottom: 12px;
 }
 
 /* quote */
 
 .quote {
-    background-color: #e5e7eb;
-    padding: 128px 256px;
+    background-color: #c2e8f5;
+    padding: 86px 120px;
+    text-align: center;
+   
 }
 
 .quote a {
@@ -153,6 +179,7 @@ a {
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
+    font-family: cursive;
 }
 
 .modal {
@@ -160,7 +187,7 @@ a {
 }
 
 .modal .main {
-    background-color: #3882f6;
+    background-image: linear-gradient(to bottom, #00b7ff,#000080);
     border-radius: 10px;
     padding: 32px 64px;
     color: white;
@@ -171,14 +198,49 @@ a {
 
 .mleft {
     display: flex;
+    flex-direction: column;
     flex: 2 1 auto;
+    gap: 4px;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-subtitle {
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+.modal .contato {
+    background-color: #3882f6;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid white 1.5px;
+}
+
+.modal .contato:hover {
+    background-color:#002ead;
+    transition: 0.7s;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937;
+    background-image: linear-gradient(180deg,  #000080, #030346);
     color: white;
     padding: 32px;
+}
+
+.copyright {
+    font-style: italic;
 }
